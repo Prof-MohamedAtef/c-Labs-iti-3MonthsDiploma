@@ -38,7 +38,8 @@ public:
     }
 
     void DisaplyDetails(){
-        cout<<"\n Car Number is: "<< getCarNo()<<endl<<"Manufacture year is: "<< getManfacturerYear();
+        cout<<"\n Car Number is: "<< CarNo<<endl
+        <<"Manufacture year is: "<< ManufactureYear;
     }
 };
 
@@ -104,7 +105,8 @@ int main()
     truck.setCarNo(1025);
     truck.setBoxSize(80);*/
     T.DisplayDetails();
-
+    cout<<" \n return Function in Parent Class via child Object\n............................. splitter .................. \n\n\n" ;
+    T.Car::DisaplyDetails();
 
 
     return 0;

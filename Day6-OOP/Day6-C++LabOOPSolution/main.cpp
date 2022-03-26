@@ -67,7 +67,7 @@ public:
 
     int Sum()
     {
-        return getX() + getY() + Z;
+        return getX() + Y + Z;
     }
 
 };
@@ -79,5 +79,7 @@ int main()
 
     Son s(5,4,3);
     cout<<"\n Sum of X + Y + Z: "  << s.Sum();
+
+    cout<<endl<<s.Father::Sum();
     return 0;
 }

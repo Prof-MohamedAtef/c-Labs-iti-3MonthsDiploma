@@ -8,8 +8,7 @@ class Swaps{
 public:
 // by value
     void swapByValue(int x, int y) {
-        int temp;
-
+    int temp;
         temp = x; /* save the value of x */
         x = y;    /* put y into x */
         y = temp; /* put x into y */
@@ -55,7 +54,7 @@ int main()
 
     // calling a function to swap the values.
 
-    s.swapByValue(a, b);
+    //s.swapByValue(a, b);
 
     //s.swapByAddress(&a, &b);
 

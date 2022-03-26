@@ -5,7 +5,7 @@ using namespace std;
 
 class GeoShape
 {
-private:
+protected:
     int Dim1;
     int Dim2;
 
@@ -98,6 +98,7 @@ public:
 
     setDim(int a)
     {
+        Dim1=Dim2=a;
         //setDim1(a);
         //setDim2(a);
     }
@@ -139,10 +140,11 @@ int main()
     cout<<"\n Triangle Area = "<< T.CalcArea();
 
 
-    Square S(9);
+    Square S;
+    S.setDim(5);
     cout<<"\n Square Area = "<< S.CalcArea();
 
-
+/
     Circle C(15);
     cout<<"\n Circle Area = "<< C.CalcArea();
 

@@ -56,7 +56,6 @@ class Complex{
         }
 };
 
-
     void Complex::printComplex()
     {
         if(this->getImg() > 0)
@@ -64,7 +63,6 @@ class Complex{
         else
             cout<<endl<< this->getReal() << this->getImg() << "i";
     }
-
 
     Complex Complex::AddComplex(Complex C)
     {
@@ -115,7 +113,7 @@ public:
 
 int main()
 {
-    Complex C1, C2;
+    /*Complex C1, C2;
 
     C1.setReal(8);
     C1.setImg(9);
@@ -127,12 +125,12 @@ int main()
     Complex C3 = C1.AddComplex(C2);
     cout<<"\n Complex C3 = ";
     C3.printComplex();
-
+1
     Complex C4 =C1.SubtractComplex(C2);
     cout<<"\n Complex C4 = ";
     C4.printComplex();
 
-
+*/
     /*
 
     Calculator Work
@@ -154,6 +152,3 @@ int main()
     cout<<calculator.Add(3,7,5)<<endl;
     return 0;
 }
-
-
-
